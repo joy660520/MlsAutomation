@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="chrometest"
+           tests="1"
+           failures="1"
+           errors="0"
+           skipped="0"
+           time="0.576">
+  <properties />
+            <testcase name="browser" time="0.576" classname="demo.BrowserTest">
+                <failure type="org.testng.internal.reflect.MethodMatcherException"
+                  message="
+Data provider mismatch
+Method: browser([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) joymls,(java.lang.String) 000000,(java.lang.String) ,(java.lang.String) ,(java.lang.String) ]"
+              >
+<![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+Data provider mismatch
+Method: browser([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) joymls,(java.lang.String) 000000,(java.lang.String) ,(java.lang.String) ,(java.lang.String) ]
+  org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:45)
+  org.testng.internal.Parameters.injectParameters(Parameters.java:796)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:983)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+  org.testng.TestRunner.privateRun(TestRunner.java:648)
+  org.testng.TestRunner.run(TestRunner.java:505)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+  org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+  java.base/java.lang.Thread.run(Thread.java:844)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+  
+</testsuite>

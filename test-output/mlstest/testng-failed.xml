@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [mlstest]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="safari"/>
+  <parameter name="url" value="https://mls-test.istaging.com/login"/>
+  <test parallel="tests" name="safaritest(failed)">
+    <parameter name="browser" value="safari"/>
+    <parameter name="url" value="https://mls-test.istaging.com/login"/>
+    <classes>
+      <class name="cases.MultiBrowserTest">
+        <methods>
+          <include name="validLoginTest"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- cases.MultiBrowserTest -->
+    </classes>
+  </test> <!-- safaritest(failed) -->
+</suite> <!-- Failed suite [mlstest] -->

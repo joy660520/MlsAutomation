@@ -1,0 +1,6 @@
+2019-08-27 09:21:36  [ TestNG:0 ] - [ INFO ]  browser ischromeurl ishttps://mls-test.istaging.com/login
+2019-08-27 09:21:36  [ TestNG:0 ] - [ INFO ]  browser issafariurl ishttps://mls-test.istaging.com/login
+2019-08-27 14:54:01  [ TestNG:0 ] - [ INFO ]  browser ischromeurl ishttps://mls-test.istaging.com/login
+2019-08-27 14:54:12  [ TestNG:10766 ] - [ INFO ]  browser issafariurl ishttps://mls-test.istaging.com/login
+2019-08-27 14:54:47  [ TestNG:0 ] - [ INFO ]  browser ischromeurl ishttps://mls-test.istaging.com/login
+2019-08-27 14:54:58  [ TestNG:10543 ] - [ INFO ]  browser issafariurl ishttps://mls-test.istaging.com/login

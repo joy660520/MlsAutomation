@@ -1,0 +1,5 @@
+2019-11-11 14:09:11  [ TestNG:0 ] - [ INFO ]  Default LiveTour is added successfully
+2019-11-11 14:39:08  [ TestNG:0 ] - [ INFO ]  Invalid Default LiveTour can't be added correctly
+2019-11-11 17:28:25  [ TestNG:0 ] - [ INFO ]  Property created successfully
+2019-11-11 17:34:57  [ TestNG:0 ] - [ INFO ]  Property deleted successfully
+2019-11-11 17:41:08  [ TestNG:0 ] - [ INFO ]  Default LiveTour is added successfully

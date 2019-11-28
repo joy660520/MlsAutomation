@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="safaritest"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="8.320">
+  <properties />
+  
+  
+            <testcase name="validLoginTest" time="8.320" classname="cases.MultiBrowserTest" />
+      
+</testsuite>

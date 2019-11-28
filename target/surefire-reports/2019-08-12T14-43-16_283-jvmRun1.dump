@@ -1,0 +1,48 @@
+# Created at 2019-08-12T14:43:47.851
+org.testng.TestNGException: 
+Cannot instantiate class extentx.ExtentTestNGITestListener
+	at org.testng.internal.ClassHelper.newInstance(ClassHelper.java:71)
+	at org.testng.TestNG.addListeners(TestNG.java:949)
+	at org.testng.TestNG.initializeConfiguration(TestNG.java:912)
+	at org.testng.TestNG.initializeEverything(TestNG.java:996)
+	at org.testng.TestNG.run(TestNG.java:1009)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.ExceptionInInitializerError
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at java.base/java.lang.Class.newInstance(Class.java:560)
+	at org.testng.internal.ClassHelper.newInstance(ClassHelper.java:69)
+	... 11 more
+Caused by: com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting for a server that matches ReadPreferenceServerSelector{readPreference=primary}. Client view of cluster state is {type=UNKNOWN, servers=[{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused (Connection refused)}}]
+	at com.mongodb.connection.BaseCluster.createTimeoutException(BaseCluster.java:375)
+	at com.mongodb.connection.BaseCluster.selectServer(BaseCluster.java:104)
+	at com.mongodb.binding.ClusterBinding$ClusterBindingConnectionSource.<init>(ClusterBinding.java:75)
+	at com.mongodb.binding.ClusterBinding$ClusterBindingConnectionSource.<init>(ClusterBinding.java:71)
+	at com.mongodb.binding.ClusterBinding.getReadConnectionSource(ClusterBinding.java:63)
+	at com.mongodb.operation.OperationHelper.withConnection(OperationHelper.java:212)
+	at com.mongodb.operation.FindOperation.execute(FindOperation.java:483)
+	at com.mongodb.operation.FindOperation.execute(FindOperation.java:80)
+	at com.mongodb.Mongo.execute(Mongo.java:818)
+	at com.mongodb.Mongo$2.execute(Mongo.java:805)
+	at com.mongodb.FindIterableImpl$FindOperationIterable.first(FindIterableImpl.java:207)
+	at com.mongodb.FindIterableImpl.first(FindIterableImpl.java:148)
+	at com.aventstack.extentreports.reporter.ExtentXReporter.setupProject(ExtentXReporter.java:204)
+	at com.aventstack.extentreports.reporter.ExtentXReporter.start(ExtentXReporter.java:172)
+	at com.aventstack.extentreports.Report.attach(Report.java:54)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+	at com.aventstack.extentreports.ExtentReports.attachReporter(ExtentReports.java:68)
+	at extentx.ExtentManager.createInstance(ExtentManager.java:23)
+	at extentx.ExtentManager.getInstance(ExtentManager.java:15)
+	at extentx.ExtentTestNGITestListener.<clinit>(ExtentTestNGITestListener.java:14)
+	... 17 more
+
+

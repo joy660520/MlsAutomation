@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [MLS Regression Test]" guice-stage="DEVELOPMENT">
+  <parameter name="propertyurl" value="https://newhouse.591.com.tw/home/housing/detail?hid=119803"/>
+  <parameter name="password" value="000000"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="https://mls-test.istaging.com/login"/>
+  <parameter name="username" value="joymls"/>
+  <test parallel="tests" name="delete property test(failed)">
+    <parameter name="propertyurl" value="https://newhouse.591.com.tw/home/housing/detail?hid=119803"/>
+    <parameter name="password" value="000000"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://mls-test.istaging.com/login"/>
+    <parameter name="username" value="joymls"/>
+    <classes>
+      <class name="cases.ShareLinkTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="validLoginTest"/>
+        </methods>
+      </class> <!-- cases.ShareLinkTest -->
+    </classes>
+  </test> <!-- delete property test(failed) -->
+</suite> <!-- Failed suite [MLS Regression Test] -->

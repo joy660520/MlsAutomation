@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="MLS Regression Test" parallel="tests"
+	thread-count="1">
+
+
+
+	<test name="delete property test">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="url"
+			value="https://mls-test.istaging.com/login"></parameter>
+		<parameter name="username" value="joymls"></parameter>
+		<parameter name="password" value="000000"></parameter>
+		<parameter name="propertyurl" value="https://newhouse.591.com.tw/home/housing/detail?hid=119803"></parameter>
+
+		<classes>
+			<class name="cases.ValidUpdateHouseInfoTest"></class>
+			<!--  
+			<class name="cases.AddPropLogoTest"></class>
+			<class name="cases.DeletePropLogoTest"></class>
+			<class name="cases.SearchPropertyTest"></class>
+			<class name="cases.AddDefaultLivetourTest"></class>
+			<class name="cases.AddInvalidDefaultLivetourTest"></class>
+			<class name="cases.DeleteDefaultLivetourTest"></class>
+			<class name="cases.InvalidUpdateHouseInfoTest"></class>
+			<class name="cases.ValidUpdateHouseInfoTest"></class>
+			-->
+
+		</classes>
+	</test>
+
+</suite>
+
+
